@@ -1,8 +1,11 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Link from "next/link";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <h1>Tasklog</h1>
+    <>
+      <h1>Tasklog</h1>
+      <p>A small issue tracker.</p>
+      <Link href="/issues">See all issues</Link>
+    </>
   );
 }

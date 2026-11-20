@@ -1,0 +1,7 @@
+export default function NewIssuePage() {
+  return (
+    <>
+      <h1>New Issue page</h1>
+    </>
+  );
+}
