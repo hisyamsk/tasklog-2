@@ -14,3 +14,9 @@ export async function getIssues(): Promise<Issue[]> {
   await delay()
   return structuredClone(issues)
 }
+
+export async function getIssue(id: number): Promise<Issue | undefined> {
+  await delay()
+  const issue = issues.find((issue) => issue.id === id)
+  return issue ? { ...issue } : undefined
+}

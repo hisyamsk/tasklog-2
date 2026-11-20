@@ -7,7 +7,7 @@ export function IssueList({ issues }: { issues: Issue[] }) {
             {issues.map((issue) => (
                 <li key={issue.id}>
                     <Link href={`/issues/${issue.id}`}>{issue.title}</Link>
-                    ({STATUS_LABELS[issue.status]})
+                    {" "} ({STATUS_LABELS[issue.status]})
                 </li>
             ))}
         </ul>
